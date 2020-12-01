@@ -1,0 +1,96 @@
+{
+	"config": {
+		"bootnodes": [
+			"fnode://86e4077ce3d62440c5e1f69b208c0f79c48f950678852d16b6ae2f2c686f7c3591b68457f3c602e55f70064025f9aec5ffc563fc994e6e59e30e14e796dbe133@bootNode.oexchain.io:9090"
+		],
+		"chainId": 1,
+		"chainName": "oex",
+		"chainUrl": "https://oexchain.io",
+		"accountParams": {
+			"level": 3,
+			"alllength":31,
+			"mainminlength": 3,
+			"mainmaxlength": 16,
+			"subminlength":2,
+			"submaxlength":16
+		},
+		"assetParams": {
+			"level": 3,
+			"alllength":31,
+			"mainminlength": 2,
+			"mainmaxlength": 16,
+			"subminlength":1,
+			"submaxlength":8
+		},
+		"chargeParams": {
+			"assetRatio": 80,
+			"contractRatio": 80
+		},
+		"upgradeParams": {
+			"blockCnt": 10000,
+			"upgradeRatio": 80
+		},
+		"dposParams": {
+			"maxURLLen": 512,
+			"unitStake": 1,
+			"candidateAvailableMinQuantity": 300000,
+			"candidateMinQuantity": 200000,
+			"voterMinQuantity": 1,
+			"activatedMinCandidate": 28,
+			"activatedMinQuantity": 210000000,
+			"blockInterval": 3000,
+			"blockFrequency": 6,
+			"candidateScheduleSize": 21,
+			"backupScheduleSize": 7,
+			"epochInterval": 604800000,
+			"freezeEpochSize": 2,
+			"extraBlockReward": 0,
+			"blockReward": 0,
+			"halfEpoch": 52,
+			"roundReward": 540000000000000000000,
+			"roundPow": [100,95,94,93,92,91,90,85,80,75,70,65,60,55,54,53,52,51,50,49,48,0,0,0,0,0,0,0]
+		},
+		"snapshotInterval": 3600000,
+		"systemName": "oexchain.founder",
+		"accountName": "oexchain.account",
+		"assetName": "oexchain.asset",
+		"dposName": "oexchain.dpos",
+		"feeName": "oexchain.fee",
+		"systemToken": "oextoken"
+	},
+	"timestamp": 1601136000000,
+	"gasLimit": 30000000,
+	"difficulty": 1,
+	"allocAccounts": [{
+		"name": "oexchain.founder",
+		"founder": "oexchain.founder",
+		"pubKey": "0x04bf064c95cecbe5307c785fee61e86c17ba14cb065806871364eaaf5e6170d9d2ae6b8913bff9e564c953ff6fbd336fde4156885ddbb55a91d165b1670276b249"
+	}, {
+		"name": "oexchain.account",
+		"founder": "oexchain.founder",
+		"pubKey": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	}, {
+		"name": "oexchain.asset",
+		"founder": "oexchain.founder",
+		"pubKey": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	}, {
+		"name": "oexchain.dpos",
+		"founder": "oexchain.founder",
+		"pubKey": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	}, {
+		"name": "oexchain.fee",
+		"founder": "oexchain.founder",
+		"pubKey": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	}],
+	"allocCandidates": [],
+	"allocAssets": [{
+		"name": "oextoken",
+		"symbol": "oex",
+		"amount": 700000000000000000000000000,
+		"decimals": 18,
+		"founder": "oexchain.founder",
+		"owner": "oexchain.founder",
+		"upperLimit": 1000000000000000000000000000
+	}],
+	"remark":"Science and technology defend rights."
+}
